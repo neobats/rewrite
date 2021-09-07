@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "*": [
+        "types/*",
+        "*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true,
+
+  },
+}
