@@ -1,5 +1,8 @@
 module.exports = {
+  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
   extends: [
+    "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "plugin:import/typescript",
     "react-app", // Extends create-react-app eslint config
     "plugin:prettier/recommended", // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
@@ -7,11 +10,12 @@ module.exports = {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports
   },
-  plugins: ["react"],
-  ignorePatterns: ["gatsby-config.js"],
+  plugins: ["@typescript-eslint", "react"],
   rules: {
     "prettier/prettier": "error",
-    "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/explicit-function-return-type": "off", // TS can infer this,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "sort-imports": [
       "error",
       {
