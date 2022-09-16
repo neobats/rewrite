@@ -1,7 +1,7 @@
-import { Base } from "components/layout/Base"
-import { Typography } from "components/system/Typography"
-import * as React from 'react'
-import { Box } from "../components/system/Box"
+import * as React from "react";
+import { Base } from "../components/layout/Base";
+import { Box } from "../components/system/Box";
+import { Typography } from "../components/system/Typography";
 
 const IndexPage = () => {
   return (
@@ -10,7 +10,7 @@ const IndexPage = () => {
         <Typography tag="h1">Hello World</Typography>
       </Box>
     </Base>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

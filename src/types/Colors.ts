@@ -1,4 +1,4 @@
-type Colors = {
+export type Colors = {
   main: '#FA874B'
   mainLight: '#E38D39'
   mainDark: '#E35B39'
